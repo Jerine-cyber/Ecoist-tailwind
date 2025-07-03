@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoist</title>
+    <!--tailwind cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+
+<body>
+
+    <!--responsive navbar section-->
+    <nav class="bg-green-100 font-bold p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl">ECOIST</h1>
+
+        <!--menu svg-->
+        <svg class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="product.html">Product</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--responsive header section-->
+    <section class=" bg-green-100 p-4 flex justify-center md:p-10">
+        <div>
+            <p class="mb-4">We offer you a wide range of Artificial and Natural flowers</p>
+
+            <h2 class="font-bold text-1xl mb-5 md:text-3xl">Plants for your interior</h2>
+
+            <div class="mb-5">
+                <button class="bg-black rounded text-white p-2">Shop now</button>
+                <button class="border border-black rounded p-2">Watch video</button>
+            </div>
+
+            <p>160+ plant species | 100+ clients</p>
+        </div>
+
+        <div>
+            <img src="./images/plant pot.jpeg" alt="plantpot" class="w-70 p-8">
+        </div>
+    </section>
+
+    <!-- responsive About us section-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5">About us</h1>
+        <p>This is the site where you can find the beauty of nature</p>
+
+        <div class="md:flex">
+
+            <div class="border border-black p-2 m-6">
+                <svg class="w-10 h-20 inline " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                </svg>
+                <h2 class="text-xl font-medium">Large Assortment</h2>
+                <p>Independent assortment, a core principle of genetics, describes the random distribution of alleles
+                    (gene versions) into gametes (sperm and egg cells) during sexual reproduction. This means that the
+                    inheritance of one trait does not influence the inheritance of another trait, leading to a vast
+                    array of possible gene combinations in offspring. Essentially, it's the reason why siblings can look
+                    so different, even from the same parents.</p>
+            </div>
+
+            <div class="border border-black p-2 m-6">
+                <svg class="w-10 h-20 inline " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+
+                <h2 class="text-xl font-medium">Free and Fast Shipping</h2>
+                <p>Free and fast shipping are highly valued by online shoppers, with many citing them as top priorities.
+                    While fast shipping is often considered a key factor in customer satisfaction, free shipping is a
+                    powerful incentive for purchases. Businesses can leverage various strategies to offer both, such as
+                    incorporating shipping costs into product prices, offering free shipping for minimum purchases, or
+                    utilizing promotions and subscription models. However, balancing these offers with profitability
+                    requires careful planning and optimization of logistics and pricing.</p>
+            </div>
+
+            <div class="border border-black p-2 m-6">
+                <svg class="w-10 h-20 inline " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                </svg>
+
+                <h2 class="text-xl font-medium">24/7 Support</h2>
+                <p>We are committed to being available 24/7, ensuring that support and service are always within reach
+                    whenever you need them. Whether it’s early in the morning or late at night, weekdays or weekends,
+                    our team is ready to assist you at any time. We understand that your needs don’t follow a fixed
+                    schedule, which is why our services are designed to be responsive and reliable around the clock.
+                    With continuous availability, we aim to provide convenience, peace of mind, and a seamless
+                    experience. No matter the hour, we’re here—because excellent service should never sleep, and neither
+                    do we.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--responsive image section-->
+    <section class="p-4 text-center">
+        <h1 class="font-bold mt-5 text-3xl">Best seller</h1>
+
+       <div class="grid grid-cols-2 mt-5 md:grid-cols-4 gap-5">
+            <div>
+                <img src="./images/jasmine pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                    alt="jasmine pot">
+                <p>jasmine pot</p>
+                <p>$15</p>
+            </div>
+
+            <div>
+                <img src="./images/rose pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                    alt="rose pot">
+                <p>rose pot</p>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./images/sunflower pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                    alt="sunflower pot">
+                <p>sunflower pot</p>
+                <p>$30</p>
+            </div>
+
+            <div>
+                <img src="./images/tulip pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
+                    alt="tulip pot">
+                <p>tulip pot</p>
+                <p>$40</p>
+            </div> 
+        </div>
+    </section>
+
+    <!--responsive coustomer section-->
+    <section>
+        <div class="font-bold text-3xl text-center mt-5 ">
+            <h1>Customer review</h1>
+        </div>
+
+        <div class="flex flex-col gap-2 justify-center p-5 m-5">
+            <div class="bg-green-600 p-5 container">
+                <p class="text-white">I got this awsome quality flower pot from inkulture loved the quality of the pot
+                    can be used bhot
+                    inside or outside i recommend to buy it good quality.</p>
+                <h3 class="font-bold text-yellow-400">Clara williams</h3>
+            </div>
+
+            <div class="bg-green-600 p-5 container">
+                <p class="text-white">It took 14 days to ship my order. You gotta have patience.Need to work on
+                    communication
+                    skills. I was bored of bot giving pre designed messages.</p>
+                <h3 class="font-bold text-yellow-400">Rithika</h3>
+            </div>
+
+            <div class="bg-green-600 p-5 container">
+                <p class="text-white">I love these planters, but one tray was missing when they arrived. And, the
+                    planters had been
+                    re-packed. I would have given a 5 star rating otherwise.</p>
+                <h3 class="font-bold text-yellow-400">Joshwa</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--responsive news letter section-->
+    <section class="text-center">
+        <h1 class="font-bold text-3xl text-center mt-5">Join Our News Letter</h1>
+        <p class="mt-2 text-center">Sign up for our email newspaper to get exclusive discounts,updates,and more</p>
+        <input type="text" class="border border-black p-2 m-3 mb-3" style="width:800px">
+        <div>
+            <button class="bg-black text-white p-3 m-1 underline">Subscribe</button>
+        </div>
+    </section>
+
+    <!--responsive footer section-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold">ECOIST</h1>
+        <p>While we provide a best service for you home since 2000s</p>
+        <p class="underline">@2025 ECOIST.com</p>
+    </section>
+
+</body>
+
+</html>
