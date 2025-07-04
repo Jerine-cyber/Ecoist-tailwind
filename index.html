@@ -112,38 +112,84 @@
         </div>
     </section>
 
-    <!--responsive image section-->
-    <section class="p-4 text-center">
-        <h1 class="font-bold mt-5 text-3xl">Best seller</h1>
+    <!-- Responsive image section -->
+    <section class="text-center p-7">
+        <h1 class="font-bold text-3xl mt-5">Best seller</h1>
 
-       <div class="grid grid-cols-2 mt-5 md:grid-cols-4 gap-5">
-            <div>
-                <img src="./images/jasmine pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
-                    alt="jasmine pot">
-                <p>jasmine pot</p>
-                <p>$15</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-5">
+            <!-- Jasmine -->
+            <div class="item group relative">
+                <img src="./images/jasmine pot.jpg" alt="Jasmine pot"
+                    class="w-full h-100 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2" />
+
+                <!-- details card  -->
+                <div class="absolute inset-x-0 top-full mt-2 p-4 bg-white border border-gray-200 rounded-lg shadow-md
+                 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+                 transition-all duration-300 pointer-events-none">
+                    <h2 class="text-lg font-semibold text-gray-800">Jasmine Pot</h2>
+                    <p class="text-gray-600 text-sm mt-1">
+                        Fragrant jasmine blooms gently nestled in a handcrafted ceramic pot.
+                    </p>
+                    <span class="block font-bold text-green-700 mt-2">$15</span>
+                </div>
+
+                <!-- label/price always visible -->
+                <p class="mt-2 capitalize">jasmine pot – <span class="font-semibold">$15</span></p>
             </div>
 
-            <div>
-                <img src="./images/rose pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
-                    alt="rose pot">
-                <p>rose pot</p>
-                <p>$20</p>
+            <!-- Rose -->
+            <div class="item group relative">
+                <img src="./images/rose pot.jpg" alt="Rose pot"
+                    class="w-full h-100 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2" />
+
+                <div class="absolute inset-x-0 top-full mt-2 p-4 bg-white border border-gray-200 rounded-lg shadow-md
+                 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+                 transition-all duration-300 pointer-events-none">
+                    <h2 class="text-lg font-semibold text-gray-800">Rose Pot</h2>
+                    <p class="text-gray-600 text-sm mt-1">
+                        Fragrant rose blooms gently in a beautifully crafted ceramic pot.
+                    </p>
+                    <span class="block font-bold text-green-700 mt-2">$20</span>
+                </div>
+
+                <p class="mt-2 capitalize">rose pot – <span class="font-semibold">$20</span></p>
             </div>
 
-            <div>
-                <img src="./images/sunflower pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
-                    alt="sunflower pot">
-                <p>sunflower pot</p>
-                <p>$30</p>
+            <!-- Sunflower -->
+            <div class="item group relative">
+                <img src="./images/sunflower pot.jpg" alt="Sunflower pot"
+                    class="w-full h-100 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2" />
+
+                <div class="absolute inset-x-0 top-full mt-2 p-4 bg-white border border-gray-200 rounded-lg shadow-md
+                 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+                 transition-all duration-300 pointer-events-none">
+                    <h2 class="text-lg font-semibold text-gray-800">Sunflower Pot</h2>
+                    <p class="text-gray-600 text-sm mt-1">
+                        Bright sunflowers bloom cheerfully in a cozy ceramic pot.
+                    </p>
+                    <span class="block font-bold text-green-700 mt-2">$30</span>
+                </div>
+
+                <p class="mt-2 capitalize">sunflower pot – <span class="font-semibold">$30</span></p>
             </div>
 
-            <div>
-                <img src="./images/tulip pot.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2"
-                    alt="tulip pot">
-                <p>tulip pot</p>
-                <p>$40</p>
-            </div> 
+            <!-- Tulip -->
+            <div class="item group relative">
+                <img src="./images/tulip pot.jpg" alt="Tulip pot"
+                    class="w-full h-100 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:-translate-y-2" />
+
+                <div class="absolute inset-x-0 top-full mt-2 p-4 bg-white border border-gray-200 rounded-lg shadow-md
+                 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0
+                 transition-all duration-300 pointer-events-none">
+                    <h2 class="text-lg font-semibold text-gray-800">Tulip Pot</h2>
+                    <p class="text-gray-600 text-sm mt-1">
+                        Elegant tulip pot adds charm to any cozy home corner.
+                    </p>
+                    <span class="block font-bold text-green-700 mt-2">$40</span>
+                </div>
+
+                <p class="mt-2 capitalize">tulip pot – <span class="font-semibold">$40</span></p>
+            </div>
         </div>
     </section>
 
@@ -193,6 +239,23 @@
         <p>While we provide a best service for you home since 2000s</p>
         <p class="underline">@2025 ECOIST.com</p>
     </section>
+
+    <!-- JavaScript -->
+    <script>
+        const galleryImages = document.querySelectorAll("img[data-title]");
+        const detailsPanel = document.getElementById("details");
+        const titleBox = detailsPanel.querySelector("h2");
+        const descBox = detailsPanel.querySelector("p");
+
+        galleryImages.forEach(img => {
+            img.addEventListener("click", () => {
+                titleBox.textContent = img.dataset.title || img.alt || "Untitled";
+                descBox.textContent = img.dataset.desc || "No description.";
+                detailsPanel.classList.remove("opacity-50");
+                detailsPanel.classList.add("opacity-100");
+            });
+        });
+    </script>
 
 </body>
 
