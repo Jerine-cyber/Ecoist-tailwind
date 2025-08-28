@@ -96,8 +96,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 🔗 [LinkedIn](https://linkedin.com/in/jerinejoshwa)
 
 ---
-
-```
-
-Let me know if you'd like me to add deployment instructions for **GitHub Pages** or **Netlify**, or if you're using a build tool like **Vite** or **Webpack**.
-```
